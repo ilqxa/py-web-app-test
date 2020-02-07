@@ -3,6 +3,7 @@ import os
 
 # Задаем адрес сервера
 SERVER_ADDRESS = ('0.0.0.0', os.environ.get(['PORT'], 8443))
+print('started on {SERVER_ADDRESS}')
 
 # Настраиваем сокет
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
